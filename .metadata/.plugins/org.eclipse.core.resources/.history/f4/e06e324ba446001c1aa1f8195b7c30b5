@@ -1,0 +1,42 @@
+package 숙소어플;
+
+import java.awt.Color;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.LineBorder;
+
+public class Point extends JFrame{
+	JPanel jp =new JPanel();
+	JLabel point = new JLabel("포인트");
+	JLabel Useable_point = new JLabel("사용 가능한 포인트");
+	JLabel total = new JLabel("전체내역");
+	
+	
+	
+	public Point() {
+		setSize(500,700);
+		setBackground(Color.white);
+		setLayout(null);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setVisible(true);
+		setTitle("포인트");
+		jp.setLayout(null);
+		jp.setBorder(new LineBorder(new Color(222,222,222),3,true));
+
+		//포인트 라벨
+		point.setBounds(250,20,500,40);
+		jp.setBounds(20,70,460,100);
+		Useable_point.setBounds(60,40,150,30);
+		total.setBounds(101,100,500,40);
+		
+		jp.add(Useable_point);
+		this.add(point);
+		this.add(jp);
+	}
+	public static void main(String[] args) {
+		new Point();
+	}
+}

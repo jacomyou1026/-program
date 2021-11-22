@@ -1,0 +1,58 @@
+package 숙소어플;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class Review {
+	MyFrame my=new MyFrame();
+	public Review() {
+		String[] hotelname= {"df","sg","dg"};
+		my.setTitle("후기작성");
+		//호텔 콤보박스
+		JComboBox comboBox  = new JComboBox(hotelname);
+		JTextArea textarea = new JTextArea();
+		JLabel label = new JLabel("별점을 입력하세요 \n(5점 만점)");
+		JTextField jf =new JTextField("input");
+		JButton write= new JButton("작성하기");
+		JButton cancel = new JButton("취소하기");
+		
+		comboBox.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if(e.getSource()==comboBox) {
+					System.out.println(comboBox.getSelectedItem());
+				}
+				
+			}
+		});
+		
+		comboBox.setBounds(80, 30, 330, 30);
+		textarea.setBounds(80, 100, 330, 200);
+		label.setBounds(80, 350, 170, 20);
+		//별점입력
+		jf.setBounds(260, 350, 150, 30);
+		write.setBounds(80, 410, 150, 50);
+		cancel.setBounds(260, 410, 150,50 );
+		
+		my.add(comboBox);
+		my.add(label);
+		my.add(textarea);
+		my.add(jf);
+		my.add(comboBox);
+		my.add(write);
+		my.add(cancel);
+		
+	}
+	public static void main(String[] args) {
+		new Review();
+	}
+	
+	
+}

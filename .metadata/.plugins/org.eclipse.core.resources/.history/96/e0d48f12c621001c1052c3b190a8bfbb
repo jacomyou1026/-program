@@ -1,0 +1,14 @@
+package pb;
+
+public class BreadMaker extends Thread{
+	private BreadPlate bread = new BreadPlate();
+	
+	public BreadMaker() {
+		
+	}
+	 
+	public BreadMaker(BreadPlate bread) {
+		se
+	}
+	
+}

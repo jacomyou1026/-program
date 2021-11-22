@@ -1,0 +1,14 @@
+package day_09;
+
+public class ArrTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] arrData = new int[3][4];
+		for (int i = 1; i < 90; i++) {
+			System.out.printf("%d * %d = %d\n",(i/10)+1, i%10, ((i/10)+1 * i%10));
+			
+		}
+	}
+
+}

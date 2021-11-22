@@ -1,0 +1,12 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import javax.swing.JFrame;
+
+public class MyFrame extends JFrame {
+public MyFrame() {
+	setLocationRelativeTo(null);
+	setSize(200,300);
+	setLayout(null);
+	setVisible(true);
+}
+}

@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"day24","c":"Calc","l":"Calc()","u":"%3Cinit%3E()"},{"p":"day24","c":"Calc","l":"divde(int, int)","u":"divde(int,int)"},{"p":"day24","c":"Calc","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();

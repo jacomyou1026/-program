@@ -1,0 +1,11 @@
+package day23;
+
+public abstract class Life {
+	int floor =0;
+	floor=2;
+	abstract void up();
+	abstract void down();
+	abstract void start(int choice);
+	abstract void stop();	
+	abstract void go();	
+}

@@ -1,0 +1,63 @@
+package snippet;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class Snippet {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+//		//japanel
+//		JPanel jp = new JPanel();
+//		jp.setBounds(0, 100, 500, 700);
+//		jp.setLayout(null);
+//		jp.setBackground(Color.LIGHT_GRAY);
+////		컨테이너에 테이블, 패널(텍스트필드, 번트이 포함된 패널) 추가
+
+
+		
+		//jLabel
+	
+//		//총 예매내역
+//		label.setBounds(190, 8, 300, 100);
+//		frame.add(label);
+		JPanel northp;
+		frame.setSize(500,700);
+		frame.setLocationRelativeTo(null);
+		DefaultTableModel model=null;
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//Jtable만들기
+		
+		JButton btn =new JButton("후기작성");
+		Object columnNames[] = { "Column One", "Column Two", "Column Three" };
+		model = new DefaultTableModel(columnNames,0);
+		
+		//row추가
+		model.addRow(new Object[]{"Row1-Column1", "Row1-Column2", ""});
+		model.addRow(new Object[]{"Row1-Column1", "Row1-Column2", ""});
+		model.addRow(new Object[]{"Row1-Column1", "Row1-Column2", ""});
+		
+		final JTable table = new JTable(model);
+		JScrollPane scrollPane = new JScrollPane(table);
+		//JLabel
+		JLabel label  =new JLabel("총 예매내역");
+		label.setFont(new Font("고딕", Font.BOLD, 20));
+		northp = new JPanel();
+		northp.add(label);
+		
+		table.setAutoResizeMode(JTable.AUTO_RESIZE_SUBSEQUENT_COLUMNS);
+		table.setEnabled(false);
+
+		frame.add(scrollPane);
+		frame.setVisible(true);
+	}
+}

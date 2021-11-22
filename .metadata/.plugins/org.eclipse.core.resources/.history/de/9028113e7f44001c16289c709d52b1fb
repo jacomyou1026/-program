@@ -1,0 +1,65 @@
+package 숙소어플;
+
+import java.awt.Container;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.Box;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
+class mypages {
+	public mypages() {
+		function function = new function();
+		MyFrame mf =new MyFrame();
+		totalReserve mr =new totalReserve();
+ 		mf.setTitle("Mypages");
+ 		String[] btntext = {"포인트 조회","충전금액","예약내역","총 예약내역"};
+ 		JButton[] btn = new JButton[btntext.length];
+ 		for (int i = 0; i < btntext.length; i++) {
+			btn[i] = new JButton(btntext[i]);
+		} 		
+		JLabel label = new JLabel("님 안녕하십니까?");
+		label.setFont(new Font("d",Font.BOLD,20));
+		ActionListener al =new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				String s = e.getActionCommand();
+				switch (s){
+				case "포인트 조회":
+					
+					break;
+				case "충전금액":
+					function.getpoint();
+					break;
+				case "예약내역":
+					new ChargeMoney();
+					break;
+				case "총 예약내역":
+					mr.totalReserve();
+					break;
+				}
+			}
+		};
+		label.setBounds(180, 5, 300, 100);
+		btn[0].setBounds(90, 100, 150, 100);
+ 		btn[1].setBounds(90, 220, 150, 100);
+ 		btn[2].setBounds(90, 340, 150, 100);
+ 		btn[3].setBounds(260, 340, 150, 100);
+ 		btn[0].setEnabled(false);
+		for (int i = 0; i < btn.length; i++) {
+			btn[i].addActionListener(al);
+		}
+		mf.add(label);
+		for (int i = 0; i < btn.length; i++) {
+			mf.add(btn[i]);
+		}
+		
+	}
+	public static void main(String[] args) {
+		new mypages(); 
+	}
+}

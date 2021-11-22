@@ -1,0 +1,29 @@
+package snippet;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class Snippet {
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		frame.setSize(500,700);
+		frame.setLocationRelativeTo(null);
+
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JButton btn =new JButton("후기작성");
+		Object columnNames[] = { "Column One", "Column Two", "Column Three" };
+		DefaultTableModel model = new DefaultTableModel(columnNames,0);
+		model.addRow(new Object[]{"Row1-Column1", "Row1-Column2", btn});
+		final JTable table = new JTable(model);
+		JScrollPane scrollPane = new JScrollPane(table);
+		frame.add(scrollPane);
+		frame.setVisible(true);
+
+		table.setAutoResizeMode(JTable.AUTO_RESIZE_SUBSEQUENT_COLUMNS);
+	}
+}

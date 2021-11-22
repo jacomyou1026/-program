@@ -1,0 +1,18 @@
+package pb;
+
+public class BreadPlate {
+	private int breadCnt =0;
+	
+	void makeBread() {
+		if(breadCnt>19) {
+			System.out.println("»§ÀÌ °¡µæ Ã¡½À´Ï´Ù.");
+		}
+		breadCnt++;
+		System.out.println("»§À» 1°³ ¸¸µé¾ú½À´Ï´Ù. ÃÑ : "+breadCnt+"°³"); 
+	}
+	
+	void eatBread() {
+		
+	}
+	
+}

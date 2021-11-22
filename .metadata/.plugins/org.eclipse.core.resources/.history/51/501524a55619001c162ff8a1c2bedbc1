@@ -1,0 +1,96 @@
+package function;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.JobAttributes;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
+
+import variable.Pet;
+
+public class Manage {
+	User u = new User();
+	String[] arData = new String[5];
+	public static int insertCnt;
+
+	public void pms() {
+
+		JPanel idPanel = new JPanel(new BorderLayout(50, 0));
+		JPanel pwPanel = new JPanel(new BorderLayout(40, 0));
+		JLabel idLabel = new JLabel("♥ID");
+		JLabel pwLabel = new JLabel("♥PW");
+		// 입력받은 아이디
+		JTextField id = new JTextField("아이디를 입력하세요.");
+		// 입력받은 패스워드
+		JPasswordField pw = new JPasswordField();
+
+		String title = "애완동물 관리 프로그램(홍길동)";
+		String[] menu = { "LOGIN", "JOIN" };
+		String[] userMenu = { "INSERT", "LIST", "SEARCH", "DELETE" };
+		ImageIcon mainImg = new ImageIcon("./src/img/dog.gif");
+		ImageIcon userImg = new ImageIcon("./src/img/user.gif");
+		int choice = 0;
+		String userChoice = null;
+
+		idPanel.setOpaque(true);
+		idPanel.setBackground(Color.WHITE);
+		idPanel.add(idLabel, BorderLayout.WEST);
+		idPanel.add(id);
+
+		pwPanel.setOpaque(true);
+		pwPanel.setBackground(Color.WHITE);
+		pwPanel.add(pwLabel, BorderLayout.WEST);
+		pwPanel.add(pw);
+
+		idLabel.setFont(new Font("Arial", Font.BOLD, 18));
+		pwLabel.setFont(new Font("Arial", Font.BOLD, 18));
+
+		UIManager.put("OptionPane.okButtonText", "OK");
+		UIManager.put("OptionPane.cancelButtonText", "LOGOUT");
+		UIManager.put("OptionPane.buttonFont", new Font("Arial", Font.BOLD, 18));
+		UIManager.put("OptionPane.background", Color.white);
+		UIManager.put("Panel.background", Color.white);
+		
+		
+		while (true) {
+			choice = JOptionPane.showOptionDialog(null, new Object[] { mainImg, idPanel, pwPanel }, title,
+					JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, menu, null);
+			
+			String password = "";
+			for (int i = 0; i < pw.getPassword().length; i++) {
+				password+=pw.getPassword()[i];
+			}
+			
+			Pet.setId(id.getText());
+			Pet.setPw(password);
+			
+			if(choice ==-1) {
+				System.out.println("나가기");
+				break;
+			}
+			switch(choice) {
+			case 0:
+				//로그인
+				System.out.println("로그인");
+				break;
+				
+			case 1:
+				//회원가입
+				if(u.join()) {
+					JOptionPane.showMessageDialog(null,"회원가입 완료", title,JOptionPane.INFORMATION_MESSAGE);
+				}else {
+					JOptionPane.showMessageDialog(null,"중복된 아이디 입니다.", title,JOptionPane.INFORMATION_MESSAGE);
+					
+				}
+				break;
+			}
+		}
+	}
+}

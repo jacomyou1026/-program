@@ -1,0 +1,19 @@
+package 숙소어플;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Point extends JFrame{
+	JPanel jp =new JPanel();
+	
+	
+	public Point() {
+		setSize(500,700);
+		setLayout(null);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setVisible(true);
+		setTitle("포인트");
+		jp.setLocation(EXIT_ON_CLOSE, ABORT);
+	}
+}

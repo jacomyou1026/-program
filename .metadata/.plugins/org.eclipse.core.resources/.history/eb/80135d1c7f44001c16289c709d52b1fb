@@ -1,0 +1,53 @@
+package 숙소어플;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollBar;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+
+public class totalReserve {
+ public  void totalReserve() {
+	// TODO Auto-generated constructor stub
+		JFrame frame = new JFrame();
+		frame.setTitle("총 예매내역");
+		frame.setLocationRelativeTo(null);
+		DefaultTableModel model=null;
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//Jtable만들기
+		JButton btn =new JButton("후기작성");
+		Object columnNames[] = { "호텔명","객실정보","방문일자","후기작성"};
+		model = new DefaultTableModel(columnNames,0);
+		
+		//row추가
+		for (int i = 0; i < 2; i++) {
+			model.addRow(new String[] {
+					"df","Df","Df","Ds"
+			});
+			
+		}
+		final JTable table = new JTable(model);
+		JScrollPane scrollPane = new JScrollPane(table);
+		//JLabel
+		
+		table.setAutoResizeMode(JTable.AUTO_RESIZE_SUBSEQUENT_COLUMNS);
+		table.setEnabled(false);
+
+		frame.add(scrollPane);
+		frame.setSize(500,700);
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
+		
+}
+ public static void main(String[] args) {
+	new totalReserve();
+}
+}

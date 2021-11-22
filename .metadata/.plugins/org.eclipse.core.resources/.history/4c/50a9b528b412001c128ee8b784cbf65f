@@ -1,0 +1,33 @@
+package day23;
+
+public class Elevator extends Life {
+
+	@Override
+	void up() {
+		floor++;
+	}
+
+	@Override
+	void down() {
+		floor--;
+	}
+
+	@Override
+	void start(int choice) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void go() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;tms.Bsu&apos; to &apos;Bus&apos;&#x0D;&#x0A;- Original project: &apos;TMS&apos;&#x0D;&#x0A;- Original element: &apos;tms.Bsu&apos;&#x0D;&#x0A;- Renamed element: &apos;tms.Bus&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Bsu&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;tms{Bsu.java[Bsu" matchStrategy="1" name="Bus" qualified="false" references="true" similarDeclarations="false" stamp="1630828814563" textual="false" version="1.0"/>
+</session>

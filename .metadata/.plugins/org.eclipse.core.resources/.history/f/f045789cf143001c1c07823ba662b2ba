@@ -1,0 +1,57 @@
+package 숙소어플;
+
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class 총_예매내역frame  {
+	public void 총_예매내역frame(){
+		MyFrame my =new MyFrame();
+		my.setDefaultCloseOperation(my.DISPOSE_ON_CLOSE);
+		JPanel jp = new JPanel();
+		jp.setBounds(0, 0, 0, 0);
+		
+		JLabel label  =new JLabel("총 예매내역");
+		String[] btntext= {"퇴실완료","후기 작성하기"};
+		JButton[] btn= new JButton[btntext.length];
+		for (int i = 0; i < btn.length; i++) {
+			btn[i] = new JButton(btntext[i]);
+		}
+		String[] labeltext = {"호텔명","객실정보","방문일자","스위트홈","checkin ~ checkout"};
+		JLabel[] labeles =new JLabel[labeltext.length];
+		for (int i = 0; i < labeles.length; i++) {
+			labeles[i]= new JLabel(labeltext[i]);
+		}
+		
+		//setBounds
+		label.setBounds(0, 0, 0, 0);
+		btn[0].setBounds(0, 0, 0, 0);
+		btn[1].setBounds(0, 0, 0, 0);
+		labeles[0].setBounds(0, 0, 0, 0);
+		labeles[1].setBounds(0, 0, 0, 0);
+		labeles[2].setBounds(0, 0, 0, 0);
+		labeles[3].setBounds(0, 0, 0, 0);
+		labeles[4].setBounds(0, 0, 0, 0);
+		jp.add(label);
+		for (int i = 0; i < labeles.length; i++) {
+			jp.add(labeles[i]);
+		}
+		for (int i = 0; i < btn.length; i++) {
+			jp.add(btn[i]);
+		}
+		my.add(jp);
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		new 총_예매내역frame();
+		
+	}
+}

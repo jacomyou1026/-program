@@ -1,0 +1,30 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class totalReserve {
+ public  totalReserve() {
+	// TODO Auto-generated constructor stub
+		MyFrame my =new MyFrame();
+		my.setDefaultCloseOperation(my.DISPOSE_ON_CLOSE);
+		JPanel jp = new JPanel();
+		jp.setBounds(0, 100, 500, 200);
+		jp.setBackground(Color.LIGHT_GRAY);
+		jp.setLayout(null);
+		JLabel label  =new JLabel("ÃÑ ¿¹¸Å³»¿ª");
+		label.setFont(new Font("°íµñ", Font.BOLD, 20));
+		//setBounds
+		//ÃÑ ¿¹¸Å³»¿ª
+		label.setBounds(190, 8, 300, 100);
+		my.add(jp);
+		
+}
+ public static void main(String[] args) {
+	new totalReserve();
+}
+}

@@ -1,0 +1,40 @@
+package 문자열;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class 크로아티아_알파벳 {
+	public static void main(String[] args) {
+		Scanner scan =new Scanner(System.in);
+		System.out.println("알파벳을 입력하세요!");
+		String n = scan.next();
+		for (int i = 0; i < n.length(); i++) {
+			if(n=="c=") {
+				System.out.println("č");
+			}
+			else if(n=="c-") {
+				System.out.println("ć");
+			}
+			else if(n=="dz=") {
+				System.out.println("dž");
+			}
+			else if(n=="d-") {
+				System.out.println("đ	");
+			}
+			else if(n=="lj") {
+				System.out.println("lj");
+			}
+			else if(n=="nj") {
+				System.out.println("nj");
+			}
+			else if(n=="s=") {
+				System.out.println("š");
+			}
+			else if(n=="z=") {
+				System.out.println("ž	");
+			}
+			
+		}
+		
+	}
+}

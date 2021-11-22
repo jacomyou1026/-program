@@ -1,0 +1,9 @@
+package day25;
+
+public class ObjectTest {
+	public static void main(String[] args) {
+		String str1 = "data";
+		String str2 = "data";
+		System.out.println(str1==str2);
+	}
+}

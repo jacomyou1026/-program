@@ -1,0 +1,28 @@
+package 숙소어플;
+
+import java.awt.FlowLayout;
+import java.awt.Frame;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class main extends JFrame{
+	public main() {
+		// TODO Auto-generated constructor stub
+		setTitle("mypages");
+		setSize(300,300);
+		JButton btn1 =new JButton("적립율");
+		JButton btn2 =new JButton("충전금액");
+		JButton btn3 =new JButton("예약내역");
+		
+		JButton btn4 =new JButton("총 예약기록");
+		this.setLayout(new FlowLayout());
+		this.add(btn1);
+		this.add(btn2);
+		this.add(btn3);
+		this.add(btn4);
+		setVisible(true);
+		this.setDefaultCloseOperation(JFrame);
+	
+	}
+}

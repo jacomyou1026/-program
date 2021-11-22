@@ -1,0 +1,20 @@
+package 숙소어플;
+
+import javax.swing.JComboBox;
+
+public class review {
+	MyFrame my=new MyFrame();
+	public review() {
+		String[] hotelname= {"df","sg","dg"};
+		JComboBox jb = new JComboBox(hotelname);
+		jb.addActionListener(my);
+		//호텔 콤보박스
+		jb.setBounds(0, 0, 0, 0);
+		
+		my.add(jb);
+		
+	}
+	
+	
+	
+}

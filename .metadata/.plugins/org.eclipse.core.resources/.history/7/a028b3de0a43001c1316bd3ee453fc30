@@ -1,0 +1,24 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import java.awt.Frame;
+
+public class function {
+	int point;
+	int getmoney;
+	
+	void getpoint() {
+		
+	}
+	 void reserve() {
+		 
+	 }
+	 void total_reserve() {
+		 Frame fr = new Frame();
+		 fr.setLayout(null);
+		 
+		 fr.setVisible(true);
+		 fr.add
+		 
+	 }
+	 
+}

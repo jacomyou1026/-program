@@ -1,0 +1,46 @@
+package day23;
+
+public class Elevator extends Life {
+	final int maxFloor =10;
+	final int minFloor=-3;;
+	@Override
+	void up() {
+		floor++;
+	}
+
+	@Override
+	void down() {
+		floor--;
+	}
+
+	void start(int choice) {
+		if(choice<floor) {
+			//floor는 static이기에 1씩 계속 감소.
+			//i는 1씩 증가이기이게 
+			for (int i = 0; i <=floor-choice+i; i++) {
+				//0층은 내부적으로 실행되나 사용자에게 보여주진 않는다.
+				down();
+				if(floor!=0) {
+					System.out.println(floor+1+"층");
+				}
+			}
+			//위에꺼를 배제하기하고 하기에 
+			// 올라갈 상황
+		}else if(choice!=floor) {
+			for (int i = 0; i < choice-floor+i; i++) {
+				
+			}
+		}
+	}
+
+	void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	void go() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

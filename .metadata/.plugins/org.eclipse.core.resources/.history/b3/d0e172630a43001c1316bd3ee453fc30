@@ -1,0 +1,17 @@
+package ¼÷¼Ò¾îÇÃ;
+
+public class function {
+	int point = 0;
+	int getmoney = 0;
+	
+	void getpoint() {
+		
+	}
+	 void reserve() {
+		 
+	 }
+	 void total_reserve() {
+		 
+	 }
+	 
+}

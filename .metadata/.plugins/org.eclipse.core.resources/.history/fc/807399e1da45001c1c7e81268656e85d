@@ -1,0 +1,10 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import javax.swing.JComboBox;
+
+public class review {
+	MyFrame myframe =new MyFrame();
+	JComboBox jb = new JComboBox();
+	
+	
+}

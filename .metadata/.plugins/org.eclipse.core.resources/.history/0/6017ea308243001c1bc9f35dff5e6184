@@ -1,0 +1,29 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Frame1  {
+	public Frame1(){
+		JFrame fr= new JFrame("ÃÑ ¿¹¸Å³»¿ª");
+		fr.setLayout(null);
+		fr.setBounds(20, 40, 500, 700);
+		fr.setDefaultCloseOperation(fr.DISPOSE_ON_CLOSE);
+		JLabel label  =new JLabel("ÃÑ ¿¹¸Å³»¿ª");
+		label.setLayout(null);
+		label.setBounds(150,10,300,20);
+		label.setFont(new Font("°íµñ",Font.BOLD,20));
+		fr.add(label);
+		fr.setVisible(true);
+		
+		
+	
+		
+	}
+	public static void main(String[] args) {
+		new Frame1();
+		
+	}
+}

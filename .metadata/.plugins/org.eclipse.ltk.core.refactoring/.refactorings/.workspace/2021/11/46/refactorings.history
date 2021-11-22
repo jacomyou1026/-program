@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 15 resources" deleteContents="false" description="Delete 15 resources" element1="/org.apache.ant" element10="/org.eclipse.m2e.core.ui" element11="/org.eclipse.m2e.sourcelookup" element12="/org.eclipse.wildwebdeveloper" element13="/org.eclipse.wtp.epp.package.jee.intro" element14="/org.jkiss.bundle.gis" element15="/org.jkiss.bundle.jfreechart" element2="/org.eclipse.cdt.core.win32.x86_64" element3="/org.eclipse.datatools.intro" element4="/org.eclipse.draw2d" element5="/org.eclipse.egit.doc" element6="/org.eclipse.epp.package.common" element7="/org.eclipse.epp.package.jee" element8="/org.eclipse.gef" element9="/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="15" stamp="1636646260732"/>
+</session>

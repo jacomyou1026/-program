@@ -1,0 +1,28 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class function  {
+	
+	public void getpoint() {
+				
+			}
+
+		
+	 public void reserve() {
+		 
+		 
+	 }
+	 public  void total_reserve() {
+		
+		 
+	 }
+	
+}

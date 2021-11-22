@@ -1,0 +1,33 @@
+package 숙소어플;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class GettingMoney {
+	 public void GettingMoney () {
+		MyFrame my = new MyFrame();
+		my.setTitle("충전 금액");
+		JPanel jp = new JPanel();
+		jp.setLayout(null);
+		jp.setBounds(90, 100, 150, 100);
+		jp.setBackground(Color.LIGHT_GRAY);
+		my.setDefaultCloseOperation(my.DISPOSE_ON_CLOSE);
+	
+		
+
+//		jp.add(jf);
+//		jp.add(btn1);
+//		jp.add(btn2);
+		my.add(jp);
+		
+	}
+	public static void main(String[] args) {
+		new GettingMoney();
+	}
+}

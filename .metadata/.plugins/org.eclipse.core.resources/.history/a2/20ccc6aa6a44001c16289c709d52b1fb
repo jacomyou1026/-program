@@ -1,0 +1,37 @@
+package snippet;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class Snippet {
+	ex5_collection.Ex1_ArrayList e = new ex5_collection.Ex1_ArrayList();
+	public static void main(String[] args) {
+		JFrame frame = new JFrame();
+		frame.setSize(500,700);
+		frame.setLocationRelativeTo(null);
+
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		Object rowData[][] = { { "Row1-Column1", "Row1-Column2", "Row1-Column3" },
+				{ "Row2-Column1", "Row2-Column2", "Row2-Column3" },
+				{ "Row3-Column1", "Row3-Column2", "Row3-Column3" } };
+		Object columnNames[] = { "Column One", "Column Two", "Column Three" };
+		final JTable table = new JTable(rowData, columnNames);
+		DefaultTableModel model = new DefaultTableModel(columnNames,0);
+		for (int i = 0; i < columnNames.length; i++) {
+				model.addRow();
+			
+		}
+
+		JScrollPane scrollPane = new JScrollPane(table);
+
+		frame.add(scrollPane, BorderLayout.CENTER);
+		frame.setVisible(true);
+
+		table.setAutoResizeMode(JTable.AUTO_RESIZE_SUBSEQUENT_COLUMNS);
+	}
+}

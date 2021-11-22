@@ -1,0 +1,69 @@
+package 숙소어플;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class totalReserve {
+ public  totalReserve() {
+	// TODO Auto-generated constructor stub
+		MyFrame my =new MyFrame();
+		my.setDefaultCloseOperation(my.DISPOSE_ON_CLOSE);
+		JPanel jp = new JPanel();
+		jp.setBounds(0, 100, 500, 200);
+		jp.setBackground(Color.LIGHT_GRAY);
+		jp.setLayout(null);
+		JLabel label  =new JLabel("총 예매내역");
+		label.setFont(new Font("고딕", Font.BOLD, 20));
+		String[] btntext= {"퇴실완료","후기 작성하기"};
+		
+		JButton[] btn= new JButton[btntext.length];
+		for (int i = 0; i < btn.length; i++) {
+			btn[i] = new JButton(btntext[i]);
+			btn[i].setLayout(null);
+		}
+		String[] labeltext = {"호텔명","객실정보","방문일자","스위트홈","checkin ~ checkout"};
+		JLabel[] labeles =new JLabel[labeltext.length];
+		for (int i = 0; i < labeles.length; i++) {
+			labeles[i]= new JLabel(labeltext[i]);
+			labeles[i].setFont(new Font("고딕", Font.BOLD, 20));
+			labeles[i].setLayout(null);
+
+		}
+		
+		//setBounds
+		//총 예매내역
+		label.setBounds(190, 8, 300, 100);
+		//퇴실 완료
+		btn[0].setBounds(30, 20, 100, 20);
+		btn[0].setEnabled(false);
+		//후기 작성
+		btn[1].setBounds(200, 300, 100, 20);
+		
+		//호텔명
+		labeles[0].setBounds(20,30, 100, 20);
+		//객실정보
+		labeles[1].setBounds(30, 40, 100, 20);
+		//방문일자
+		labeles[2].setBounds(30, 50, 100, 20);
+		//스위트홈
+		labeles[3].setBounds(100, 40, 100, 20);
+		//체크인 체크아웃 날짜
+		labeles[4].setBounds(100, 50, 100, 20);
+		my.add(label);
+		for (int i = 0; i < labeles.length; i++) {
+			jp.add(labeles[i]);
+		}
+		for (int i = 0; i < btn.length; i++) {
+			jp.add(btn[i]);
+		}
+		my.add(jp);
+		
+}
+ public static void main(String[] args) {
+	new totalReserve();
+}
+}

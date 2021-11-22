@@ -1,0 +1,52 @@
+package 숙소어플;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class GettingMoney {
+	 public void GettingMoney () {
+		 JFrame fr = new JFrame();
+		fr.	setSize(500,700);
+		fr.setLayout(null);
+		fr.setTitle("Mypages");
+		fr.setLocationRelativeTo(null);
+		//jpanel
+		JPanel jp = new JPanel();
+		jp.setLayout(null);
+		jp.setSize(400,500);
+		jp.setBackground(Color.LIGHT_GRAY);
+		fr.setDefaultCloseOperation(fr.DISPOSE_ON_CLOSE);
+		JLabel labelname = new JLabel(" 님 안념하십니까?");
+		JLabel getmoney= new JLabel("충전금액을 입력해주세요?");
+		JTextField jf = new JTextField("insert coin please");
+		JButton btn1 =new JButton("충전하기");
+		JButton btn2 =new JButton("취소");
+		
+		
+		//setBounds
+		labelname.setSize(300,60);
+		getmoney.setSize(300, 100);
+		jf.setSize(310, 50);
+		btn1.setSize(150, 50);
+		btn2.setSize (150, 50);
+		
+		labelname.setFont(new Font("고딕",Font.BOLD,20));
+		getmoney.setFont(new Font("고딕",Font.BOLD,20));
+		jp.add(labelname);
+		jp.add(getmoney);
+		jp.add(jf);
+		jp.add(btn1);
+		jp.add(btn2);
+		fr.add(jp);
+		fr.setVisible(true);	
+	}
+	public static void main(String[] args) {
+		new GettingMoney();
+	}
+}

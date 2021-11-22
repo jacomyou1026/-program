@@ -1,0 +1,13 @@
+package ¼÷¼Ò¾îÇÃ;
+
+public class Modify {
+	
+		public Modify() {
+			MyFrame my = new MyFrame();
+			
+		
+	}
+		public static void main(String[] args) {
+			new Modify();
+		}
+}

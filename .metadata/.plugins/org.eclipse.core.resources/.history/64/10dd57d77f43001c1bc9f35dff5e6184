@@ -1,0 +1,31 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class function {
+	int point;
+	int getmoney;
+	
+	void getpoint() {
+		
+	}
+	 void reserve() {
+		 
+	 }
+	 void total_reserve() {
+		 JFrame fr = new JFrame("ÃÑ ¿¹¸Å³»¿ª");
+		 fr.setLayout(null);
+		 fr.setBounds(20, 40, 500, 700);
+		 JLabel title = new JLabel("ÃÑ ¿¹¸Å³»¿ª");
+		 title.setBounds(null);
+		 title.setBounds(50,100,250,200);
+		fr.setResizable(false);
+		fr.setDefaultCloseOperation(fr.DISPOSE_ON_CLOSE);
+		fr.setVisible(true);
+		 
+		 
+	 }
+	
+}

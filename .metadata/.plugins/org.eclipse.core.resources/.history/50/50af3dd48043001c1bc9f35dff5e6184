@@ -1,0 +1,18 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import javax.swing.JFrame;
+
+public class Frame  {
+	void Frame(){
+		JFrame fr= new JFrame();
+		fr.setLayout(null);
+		fr.setBounds(20, 40, 500, 700);
+		fr.setDefaultCloseOperation(fr.DISPOSE_ON_CLOSE);
+		fr.setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+		new Frame();
+		
+	}
+}

@@ -1,0 +1,32 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JComboBox;
+
+public class review {
+	MyFrame my=new MyFrame();
+	public review() {
+		String[] hotelname= {"df","sg","dg"};
+		//È£ÅÚ ÄÞº¸¹Ú½º
+		JComboBox comboBox  = new JComboBox(hotelname);
+		comboBox.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if(e.getSource()==comboBox) {
+					System.out.println(comboBox.getSelectedItem());
+				}
+				
+			}
+		});
+		jb.setBounds(0, 0, 0, 0);
+		
+		my.add(jb);
+		
+	}
+	
+	
+	
+}

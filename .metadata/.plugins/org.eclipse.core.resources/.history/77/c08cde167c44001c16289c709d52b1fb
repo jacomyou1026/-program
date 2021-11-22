@@ -1,0 +1,51 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollBar;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+public class totalReserve {
+ public  void totalReserve() {
+	// TODO Auto-generated constructor stub
+		MyFrame my =new MyFrame();
+		my.setDefaultCloseOperation(my.DISPOSE_ON_CLOSE);
+		JPanel jp = new JPanel();
+		jp.setBounds(0, 100, 500, 700);
+		jp.setBackground(Color.LIGHT_GRAY);
+		
+		jp.setLayout(null);
+		JLabel label  =new JLabel("ÃÑ ¿¹¸Å³»¿ª");
+		label.setFont(new Font("°íµñ", Font.BOLD, 20));
+		//ÃÑ ¿¹¸Å³»¿ª
+		label.setBounds(190, 8, 300, 100);
+		my.add(label);
+		
+		//Jtable
+		String[][] tdata = {
+
+				{ "1", "2", "3", "4"},
+
+				{ "1", "1", "2", "3" },
+
+				{ "2", "3", "3", "4" }};
+
+		DefaultTableModel model = new DefaultTableModel(tdata,columns);
+		JTable table = new JTable(model);
+		table.setAutoResizeMode(table.AUTO_RESIZE_ALL_COLUMNS);
+		table.setEnabled(false);
+		jp.add(new JScrollPane(table));
+		my.add(jp);
+		
+				
+		
+}
+ public static void main(String[] args) {
+	new totalReserve();
+}
+}

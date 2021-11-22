@@ -1,0 +1,38 @@
+package ¼÷¼Ò¾îÇÃ;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class ÃÑ_¿¹¸Å³»¿ªframe  {
+	public ÃÑ_¿¹¸Å³»¿ªframe(){
+		JFrame fr= new JFrame("ÃÑ ¿¹¸Å³»¿ª");
+		fr.setLayout(null);
+		fr.setBounds(20, 40, 500, 700);
+		fr.setDefaultCloseOperation(fr.DISPOSE_ON_CLOSE);
+		JLabel label  =new JLabel("ÃÑ ¿¹¸Å³»¿ª");
+		label.setLayout(null);
+		label.setBounds(250,25,300,20);
+		label.setFont(new Font("°íµñ",Font.BOLD,20));
+		
+		//panel·Î ¸¸µé±â
+		JPanel jp = new JPanel();
+		jp.setLayout(null);
+		jp.setBackground(Color.LIGHT_GRAY);
+		
+	
+		fr.add(label);
+		fr.setVisible(true);
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		new ÃÑ_¿¹¸Å³»¿ªframe();
+		
+	}
+}
